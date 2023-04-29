@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Quicksand:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: #57342f;
+    height: 100vh;
+}
+
+#main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    height: 100%;
+}
+
+#main_article{
+    min-width: 700px;
+    max-width: 700px;
+    height: 400px;
+    box-shadow: 4px 3px 3px 1px #000000a9;
+}
+
+#l_window{
+    float:left;
+    height: 100%;
+    width: 50%;
+    padding: 25px;
+    background-color: #470d3b ;
+    color: aliceblue;
+}
+
+#l_window_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#r_window{
+    background-color: #7e2f56;
+    color: aliceblue;
+    height: 100%;
+    width: 50%;
+    padding: 25px;
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#r_window_content h4{
+    padding: 5px;
+}
+
+#r_window_content p{
+    font-size: 14px;
+}
+
+footer{
+    background-color: #febd84;
+    color: rgb(0, 0, 0);
+    position:sticky;
+    top:100%;
+    width: 100%;
+    padding: 7.5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    margin-left: auto ;
+}
+
+footer ul li a{
+    display: flex;
+    align-items: center;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 7.5px;
+}
+
+.button_c1{
+    color: aliceblue;
+    background-color: #c0576f ;
+    padding: 7.5px;
+    border-radius: 2.5px;
+    border-color: aliceblue;
+}
+
+.button_c1:hover{
+    background-color: #974458;
+}
+
+.button_c1:active{
+    color: rgb(0, 0, 0);
+    background-color: #e48679;
+}
+
+@media screen and (max-width: 700px) {   
+    #r_window{
+        display: none;
+    }
+
+    #l_window{
+        width: 100%;
+    }
+
+    #main_content{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex: 1;
+        padding: 0;
+    }
+
+    #main_article{
+        height: 100%;
+        flex:1;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
