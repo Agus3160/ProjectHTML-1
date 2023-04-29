@@ -5,6 +5,7 @@ async function fetchText() {
         return response.json().then(v => v[0]);     //Return the word that the API provide.
     }catch(e){
         alert("Something went wrong.\n"+ e);    //In case of error, we alert the user about it.
+        return "API ERROR";
     }
 }
 
